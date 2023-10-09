@@ -1,0 +1,246 @@
+ /* Estilos Genericos  */
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: relative;
+    background-color: #a54a4a;
+    border-radius: 40px;
+}
+
+nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul li:hover {
+    background-color: #000000;
+}
+
+nav ul li:nth-child(1),
+nav ul li:nth-child(4) {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+nav ul li:nth-child(2),
+nav ul li:nth-child(3) {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+nav:hover ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.menu-toggle:checked+.menu-icon .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-toggle:checked+.menu-icon .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked+.menu-icon .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu-toggle:checked+.menu {
+    max-height: 200px;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section.hero {
+    background-image: url("https://www.crunchyroll.com/imgsrv/display/thumbnail/1200x675/catalog/crunchyroll/1ecde018e863e2aaee31f00a23378c35.jpe");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.hero h2 {
+    color: #861f1f;
+    text-align: center;
+    padding-top: 100px;
+}
+
+section.hero p {
+    color: #ffffff;
+    text-align: center;
+}
+
+section.hero button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 15px 50px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+section.about {
+    background-image: url("https://hips.hearstapps.com/hmg-prod/images/one-piece-orden-cronologico-peliculas-1677501143.jpg?resize=1200:*");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos con clases */
+
+.info-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .info-box:hover {
+    background-color: #ffcc00;
+  }
+
+/*Seccion de personajes*/
+
+section.characters {
+    background-image: url("https://i.ytimg.com/vi/_N_d4JctUcs/maxresdefault.jpg");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Seccion de mas informacion */
+section.about h2 {
+    text-align: center;
+}
+
+section.about p {
+    text-align: justify;
+}
+
+section.characters {
+    background-color: #ffffff;
+}
+
+section.characters h2 {
+    text-align: center;
+}
+
+section.characters ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section.characters ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+section.characters a {
+    color: #000000;
+    text-decoration: none;
+}
+
+section.settings {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  section.settings h2 {
+    font-size: 24px;
+    color: #333; 
+    margin-bottom: 20px;
+  }
+  
+  section.settings a {
+    display: block;
+    color: #007bff; 
+    text-decoration: none;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: color 0.3s ease-in-out; 
+  }
+  
+  section.settings a:hover {
+    color: #0056b3; 
+  }
+  
+
+
+footer {
+    background-color: #141212;
+    color: #ffffff;
+    padding: 20px;
+}
